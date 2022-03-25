@@ -18,5 +18,35 @@ namespace EjercicioI01
             }
             return retorno;
         }
+
+        public static bool ValidarRespuesta()
+        {
+            string confirmacion;
+            bool retorno = false;
+
+            do
+            {
+                Console.WriteLine("Desea continuar? S/N");
+
+                confirmacion = Console.ReadLine();
+
+                if(confirmacion == "S")
+                {
+                    retorno = true;
+                   // return true;
+                }
+                else
+                {
+                    if(confirmacion == "N")
+                    {
+                        retorno = false;
+                        //return false;
+                    }
+                }
+                
+            }while(confirmacion != "S" && confirmacion != "N");
+
+            return retorno;
+        }
     }
 }
