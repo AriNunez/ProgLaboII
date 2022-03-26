@@ -46,6 +46,7 @@ namespace EjercicioI01
                 
             }while(confirmacion != "S" && confirmacion != "N");
 
+            Console.Clear();
             return retorno;
         }
     }
