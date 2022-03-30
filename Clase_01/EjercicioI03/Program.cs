@@ -12,15 +12,30 @@ namespace EjercicioI03
             //Si ingresa "salir", cerrar la consola.
             //Al finalizar, preguntar al usuario si desea volver a operar.Si la respuesta es afirmativa, iterar.De lo contrario, cerrar la consola.
 
-            int numeroIngresado;
-            string input;
-            int numeroPrimo;
+            int numeroIngresado = 20;
+            //int numeroPrimo;
+            int acumuladorDivisiones;
+            int resto;
+            int i;
+            int j;
 
-            do
+            for(i = 1; i <= numeroIngresado; i++)
             {
-                Console.WriteLine("Ingrese");
+                acumuladorDivisiones = 0;
 
-            } while (true);
+                for (j = 1; j <= i; j++)
+                {
+                    resto = i % j;
+                    if(resto == 0)
+                    {
+                        acumuladorDivisiones++;
+                    }
+                }
+                if(acumuladorDivisiones == 2)
+                {
+                    Console.WriteLine(i);
+                }
+            }
             
             
         }
