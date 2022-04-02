@@ -10,8 +10,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", "Entidades\Entidades.csproj", "{9054998E-DA66-4D00-AFD5-2FF30F02E832}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjercicioI03", "EjercicioI03\EjercicioI03.csproj", "{48256044-18F8-4216-8D93-0CAB80CE9F12}"
+<<<<<<< HEAD
+=======
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioI02", "EjercicioI02\EjercicioI02.csproj", "{AFD2DA44-534B-4817-AFD8-18F14F2074C0}"
+>>>>>>> daf7df31551d0145fd94fd6153ece9f56b8f0dd2
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
