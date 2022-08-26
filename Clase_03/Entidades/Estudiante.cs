@@ -13,7 +13,7 @@ namespace Entidades
         private string nombre;
         private int notaPrimerParcial;
         private int notaSegundoParcial;
-        private Random random;
+        private static Random random;
 
         public Estudiante(string apellido, string legajo, string nombre)
         {
@@ -22,15 +22,18 @@ namespace Entidades
             this.nombre = nombre;
         }
 
-        public static void SetRandom()
-        {
-            Random random = new Random();
+        //private static void Estudiante()
+        //{
+        //    random = new Random();
 
-        }
+            
+
+        //}
 
         public void SetNotaPrimerParcial(int nota)
         {
             this.notaPrimerParcial = nota;
+            //Estudiante();
         }
 
         public void SetNotaSegundoParcial(int nota)

@@ -21,13 +21,13 @@ namespace EjercicioI01
             {
                 Console.WriteLine("Ingrese un numero:");
 
-                if(int.TryParse(Console.ReadLine(), out numeroIngresado))
+                if (int.TryParse(Console.ReadLine(), out numeroIngresado))
                 {
-                    if(numeroIngresado < minimo)
+                    if (numeroIngresado < minimo)
                     {
                         minimo = numeroIngresado;
                     }
-                    if(numeroIngresado > maximo)
+                    if (numeroIngresado > maximo)
                     {
                         maximo = numeroIngresado;
                     }
@@ -36,9 +36,9 @@ namespace EjercicioI01
                 }
                 else
                 {
-                  Console.ForegroundColor = ConsoleColor.Red;
-                  Console.WriteLine("Error!");
-                  break;
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Error!");
+                    break;
                 }
             }
 
@@ -50,7 +50,12 @@ namespace EjercicioI01
 
 
 
+            //DateTime entrada = new DateTime(2022,6,4,15,00,00);
+            //DateTime salida = DateTime.Now;
 
+            //TimeSpan horas = salida - entrada;
+
+            //Console.WriteLine(horas.Hours);
 
 
 

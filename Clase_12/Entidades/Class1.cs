@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Logica
+namespace Entidades
 {
     public class Class1
     {

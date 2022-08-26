@@ -1,4 +1,5 @@
 ﻿using System;
+using Logica;
 
 namespace UI
 {
@@ -6,7 +7,14 @@ namespace UI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            if(Sistema.CheckearUsuario("pepe","asd123"))
+            {
+                Console.WriteLine("Logueado");
+            }
+            else
+            {
+                Console.WriteLine("SIN ACCESO");
+            }
         }
     }
 }

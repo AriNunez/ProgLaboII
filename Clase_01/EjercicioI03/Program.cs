@@ -13,31 +13,56 @@ namespace EjercicioI03
             //Al finalizar, preguntar al usuario si desea volver a operar.Si la respuesta es afirmativa, iterar.De lo contrario, cerrar la consola.
 
             int numeroIngresado = 20;
-            //int numeroPrimo;
+            string numeroIngresadoStr;
             int acumuladorDivisiones;
             int resto;
             int i;
             int j;
+            string respuesta;
 
-            for(i = 1; i <= numeroIngresado; i++)
+            do
             {
-                acumuladorDivisiones = 0;
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("Ingrese un numero:");
+                numeroIngresadoStr = Console.ReadLine();
 
-                for (j = 1; j <= i; j++)
+                if (int.TryParse(numeroIngresadoStr, out numeroIngresado))
                 {
-                    resto = i % j;
-                    if(resto == 0)
+                    for (i = 0; i <= numeroIngresado; i++)
                     {
-                        acumuladorDivisiones++;
+                        acumuladorDivisiones = 0;
+
+                        for (j = 1; j <= i; j++)
+                        {
+                            resto = i % j;
+                            if (resto == 0)
+                            {
+                                acumuladorDivisiones++;
+                            }
+                        }
+                        if (acumuladorDivisiones == 2)
+                        {
+                            Console.WriteLine(i);
+                        }
                     }
                 }
-                if(acumuladorDivisiones == 2)
+                else
                 {
-                    Console.WriteLine(i);
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("ERROR. ¡Reingresar número!");
                 }
-            }
-            
-            
+
+                Console.WriteLine("¿Desea continuar? Y/N");
+                respuesta = Console.ReadLine();
+                if (respuesta == "N")
+                {
+                    break;
+                }
+
+
+            } while (true);
+
+
         }
     }
 }
