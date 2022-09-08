@@ -54,44 +54,63 @@ namespace EjercicioI02
         {
             string genero = string.Empty;
 
-            if(rdbMasculino.Checked)
+            foreach (RadioButton item in grbGenero.Controls)
             {
-                genero = rdbMasculino.Text;
-            }
-            else
-            {
-                if (rdbFemenino.Checked)
+                if(item.Checked)
                 {
-                    genero = rdbFemenino.Text;
+                    genero = item.Text;
                 }
-                else
-                {
-                    if (rdbNoBinario.Checked)
-                    {
-                        genero = rdbNoBinario.Text;
-                    }
-                }
+
             }
+
+            //if(rdbMasculino.Checked)
+            //{
+            //    genero = rdbMasculino.Text;
+            //}
+            //else
+            //{
+            //    if (rdbFemenino.Checked)
+            //    {
+            //        genero = rdbFemenino.Text;
+            //    }
+            //    else
+            //    {
+            //        if (rdbNoBinario.Checked)
+            //        {
+            //            genero = rdbNoBinario.Text;
+            //        }
+            //    }
+            //}
 
             return genero;
         }
 
         private string[] ComprobarCursos()
         {
-            string[] cursos = new string[3];
+            string[] cursos = new string[grbCursos.Controls.Count];
+            int i = 0;
 
-            if(chkCSharp.Checked)
+            foreach (CheckBox item in grbCursos.Controls)
             {
-                cursos[0] = chkCSharp.Text;
-            }            
-            if(chkCPlus.Checked)
-            {
-                cursos[1] = chkCPlus.Text;
-            }            
-            if(chkJavaScript.Checked)
-            {
-                cursos[2] = chkJavaScript.Text;
+                if(item.Checked)
+                {
+                    cursos[i] = item.Text;
+                }
+                i++;
             }
+
+            //if(chkCSharp.Checked)
+            //{
+            //    cursos[0] = chkCSharp.Text;
+            //}            
+            //if(chkCPlus.Checked)
+            //{
+            //    cursos[1] = chkCPlus.Text;
+            //}            
+            //if(chkJavaScript.Checked)
+            //{
+            //    cursos[2] = chkJavaScript.Text;
+            //}
 
             return cursos;
         }
