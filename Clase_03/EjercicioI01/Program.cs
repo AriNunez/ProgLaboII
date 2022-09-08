@@ -7,7 +7,7 @@ namespace EjercicioI01
     {
         static void Main(string[] args)
         {
-            Cuenta cuenta = new Cuenta("UTN", 7000.25M);
+            Cuenta cuenta = new Cuenta("UTN Avellaneda", 7000.25M);
 
             Console.WriteLine(cuenta.Mostrar());
 

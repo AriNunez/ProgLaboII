@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EjercicioWinForm
+namespace Vista
 {
     internal static class Program
     {
@@ -17,7 +17,7 @@ namespace EjercicioWinForm
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FrmMiForm());
         }
     }
 }

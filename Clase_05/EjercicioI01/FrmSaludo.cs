@@ -8,16 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EjercicioWindowsForm
+namespace EjercicioI01
 {
-    public partial class MenuPrincipal : Form
+    public partial class FrmSaludo : Form
     {
-        public MenuPrincipal()
+        public FrmSaludo(string nombre,string apellido,string materiaFavorita)
         {
             InitializeComponent();
+            lbl_mensaje.Text = $"Soy {nombre} {apellido} y mi materia favorita es {materiaFavorita}.";
         }
 
-        private void MenuPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        private void Saludo_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }

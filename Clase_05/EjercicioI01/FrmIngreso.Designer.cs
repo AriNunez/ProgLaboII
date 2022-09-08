@@ -1,6 +1,6 @@
 ﻿namespace EjercicioI01
 {
-    partial class FormIngreso
+    partial class FrmIngreso
     {
         /// <summary>
         ///  Required designer variable.

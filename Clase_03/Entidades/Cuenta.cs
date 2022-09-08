@@ -13,22 +13,7 @@ namespace Entidades
 
         public Cuenta(string titular, decimal cantidad)
         {
-            SetTitular(titular);
-            SetCantidad(cantidad);
-        }
-
-        public void SetTitular(string titular)
-        {
-            if (string.IsNullOrWhiteSpace(titular))
-            {
-                this.titular = "Sin razon social";
-            }
-
-            this.titular = titular.Trim();
-        }
-
-        public void SetCantidad(decimal cantidad)
-        {
+            this.titular = titular;
             this.cantidad = cantidad;
         }
 

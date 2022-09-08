@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EjercicioI01
 {
-    public partial class FormIngreso : Form
+    public partial class FrmIngreso : Form
     {
-        public FormIngreso()
+        public FrmIngreso()
         {
             InitializeComponent();
         }
@@ -32,7 +32,7 @@ namespace EjercicioI01
                     {
                         if(cmb_materiaFavorita.Text == cmb_materiaFavorita.Items[i].ToString())
                         {
-                             FormSaludo frmSaludo = new FormSaludo(nombre,apellido,materiaFavorita); 
+                             FrmSaludo frmSaludo = new FrmSaludo(nombre,apellido,materiaFavorita); 
                              frmSaludo.Show();
                         }
                     }
@@ -64,7 +64,7 @@ namespace EjercicioI01
 
             if(esValido == false)
             {
-                MessageBox.Show(sb.ToString(),"Error",MessageBoxButtons.OK);
+                MessageBox.Show(sb.ToString(),"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
 
             return esValido;

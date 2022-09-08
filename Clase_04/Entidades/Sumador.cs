@@ -17,12 +17,6 @@ namespace Entidades
 
         public Sumador() :this(0){}
 
-        public int GetCantidadSumas()
-        {
-            return this.cantidadSumas;
-        }
-
-
         public long Sumar(long a, long b)
         {
             cantidadSumas++;
@@ -38,7 +32,6 @@ namespace Entidades
 
         public static bool operator |(Sumador s1, Sumador s2)
         { 
-
             return s1.cantidadSumas == s2.cantidadSumas;
         }
 
