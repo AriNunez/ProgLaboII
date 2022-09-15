@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace Entidades
@@ -40,6 +41,9 @@ namespace Entidades
                     sb.AppendLine($"{this.cursos[i]}");
                 }
             }
+
+            List<int> list = new List<int>();
+            
 
             return sb.ToString();
         }

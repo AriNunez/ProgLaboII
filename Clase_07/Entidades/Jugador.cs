@@ -52,16 +52,16 @@ namespace Entidades
         //    this.partidosJugados = partidosJugados;
         }
 
-        public string Mostrar()
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"Datos del jugador:");
-            sb.AppendLine($"Nombre: {nombre}");
-            sb.AppendLine($"Numero de Camiseta: {numeroCamiseta}");
-            sb.AppendLine($"Posicion: {posicion}");
-            sb.AppendLine($"Partidos Jugados: {partidosJugados.ToString()}");
+    //public string Mostrar()
+    //{
+    //    StringBuilder sb = new StringBuilder();
+    //    sb.AppendLine($"Datos del jugador:");
+    //    sb.AppendLine($"Nombre: {nombre}");
+    //    sb.AppendLine($"Numero de Camiseta: {numeroCamiseta}");
+    //    sb.AppendLine($"Posicion: {posicion}");
+    //    sb.AppendLine($"Partidos Jugados: {partidosJugados.ToString()}");
 
-            return sb.ToString();
-        }
-    }
+    //    return sb.ToString();
+    //}
 }
+
